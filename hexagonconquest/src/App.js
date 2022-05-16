@@ -5,11 +5,12 @@ import CasillaCanvas from './components/CasillaCanvas'
 
 function App() {
 
-  
+          // Dos modos:   usando HTML y CSS   <Tablero>
+          //              usando HTML Canvas  <CasillaCanvas>
   return (
     <div className="fondo">
       Proyecto HexagonConquest
-      <Tablero/>
+      <CasillaCanvas/> 
     </div>
   );
 }
@@ -24,12 +25,6 @@ const Tablero = () => {
     )
   }
 
-  const renderCasillaCanvas =() => {
-    return (
-      <Casilla/>
-    )
-  }
-
   return (
     <div className="tablero">
       <div className="filaCasillas">
@@ -39,7 +34,7 @@ const Tablero = () => {
         {renderCasilla()}{renderCasilla()}{renderCasilla()}{renderCasilla()}
       </div>
       <div className="filaCasillas">
-        {renderCasilla()}{renderCasilla()}{renderCasillaCanvas()}{renderCasilla()}{renderCasilla()}
+        {renderCasilla()}{renderCasilla()}{renderCasilla()}{renderCasilla()}{renderCasilla()}
       </div>
       <div className="filaCasillas">
         {renderCasilla()}{renderCasilla()}{renderCasilla()}{renderCasilla()}
