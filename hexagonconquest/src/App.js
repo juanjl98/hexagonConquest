@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
-
+import CasillaCanvas from './components/CasillaCanvas'
 
 
 function App() {
@@ -19,20 +18,39 @@ export default App;
 
 const Tablero = () => {
 
+  const renderCasilla = () => {
+    return (
+      <Casilla/>
+    )
+  }
+
+  const renderCasillaCanvas =() => {
+    return (
+      <Casilla/>
+    )
+  }
+
   return (
     <div className="tablero">
-      <Casillas/>
+      <div className="filaCasillas">
+        {renderCasilla()}{renderCasilla()}{renderCasilla()}
+      </div>
+      <div className="filaCasillas">
+        {renderCasilla()}{renderCasilla()}{renderCasilla()}{renderCasilla()}
+      </div>
+      <div className="filaCasillas">
+        {renderCasilla()}{renderCasilla()}{renderCasillaCanvas()}{renderCasilla()}{renderCasilla()}
+      </div>
+      <div className="filaCasillas">
+        {renderCasilla()}{renderCasilla()}{renderCasilla()}{renderCasilla()}
+      </div>
+      <div className="filaCasillas">
+        {renderCasilla()}{renderCasilla()}{renderCasilla()}
+      </div>
     </div>
   )
 }
 
-const Casillas = () => {
-  return (
-    <div className ="filaCasillas">
-    <Casilla/><Casilla/><Casilla/><Casilla/><Casilla/>
-    </div>
-  )
-}
 
 const Casilla = () => {
 

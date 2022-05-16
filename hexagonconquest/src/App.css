@@ -7,22 +7,26 @@ body {
 }
 
 .filaCasillas {
-  margin: auto;
   position: relative;
+  top: 10%;
 }
 
 .tablero {
+  /*Forma poligonal*/
   aspect-ratio: 1 / 0.86602540378;
   background-color: burlywood;
   clip-path: polygon(25% 0, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  width: 50%;
+  height: 500px;
+  /*Posición*/
+  margin: 5% auto;
 }
 
 .casilla {
-  aspect-ratio: 1 / 0.86602540378;
-  background-color: lightgreen;
-  clip-path: polygon(25% 0, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  width: 10%;
-  transform: rotate(30deg);
+  /*Forma poligonal*/
+    aspect-ratio: 1 / 0.86602540378;
+    background-color: lightgreen;
+    clip-path: polygon(25% 0, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    width: 16%;
+    transform: rotate(30deg);
   border: 0px;
 }
